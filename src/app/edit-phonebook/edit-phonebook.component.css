@@ -1,0 +1,63 @@
+/* Stil düzenlemeleri */
+.phonebook-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .phonebook-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .phonebook-field {
+    margin-bottom: 15px;
+  }
+  
+  .phonebook-field label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .phonebook-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .phonebook-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .phonebook-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .phonebook-buttons button.update-btn {
+    background-color: #4285f4;
+  }
+  
+  .phonebook-buttons button.delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .phonebook-buttons button.create-btn {
+    background-color: #0d6efd;
+  }
+  
+  /* Butonlara hoover efekti */
+  .phonebook-buttons button:hover {
+    opacity: 0.8;
+  }
+  

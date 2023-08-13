@@ -1,0 +1,23 @@
+<button (click)="initNewContact()">Create New Contact</button>
+  
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Phone Number</th>
+  <th></th>
+</thead>
+
+<tbody>
+  <tr *ngFor="let contacts of contact">
+    <td>{{ contacts.firstName }}</td>
+    <td>{{ contacts.lastName }}</td>
+    <td>{{ contacts.phoneNumber }}</td>
+    <td><button (click)="editContact(contacts)">Edit</button></td>
+    </tr>
+  </tbody>
+</table>
+
+  <app-edit-phonebook [contact]="contactToEdit" 
+    (contactUpdated)="updatePhoneBookList($event)"
+  ></app-edit-phonebook>
